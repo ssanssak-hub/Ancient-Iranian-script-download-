@@ -22,7 +22,7 @@
 
 ## 📥 دانلود
 
-**نسخه فعلی: `1.5.0.114`**
+**نسخه فعلی: `1.5.0.115`**
 
 ### [⬇️ دانلود مستقیم APK](https://github.com/ssanssak-hub/Ancient-Iranian-script-download-/releases/latest/download/dabire_irani_iranian_script.apk)
 
@@ -34,7 +34,12 @@
 
 
 ### 📌 سایر تغییرات
+- Rename build.yml.txt to build.yml
+- Update MainActivity.kt
+- Update ChangelogHelper.kt
+- Update MenuActionsHelper.kt
 - Update UpdateChecker.kt
+- Rename build.yml to build.yml.txt
 
 
 ---
