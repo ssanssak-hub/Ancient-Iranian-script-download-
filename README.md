@@ -7,7 +7,7 @@
 
 ## 📥 دانلود آخرین نسخه
 
-**نسخه فعلی: `1.5.0`**
+**نسخه فعلی: `1.5.0.98`**
 
 ### [⬇️ دانلود مستقیم APK](https://github.com/ssanssak-hub/Ancient-Iranian-script-download-/releases/latest/download/dabire_irani_iranian_script.apk)
 
@@ -37,6 +37,6 @@
 
 <div align="center">
 
-**آخرین به‌روزرسانی: 2026-09-28** • **ساخته‌شده با ❤️**
+**آخرین به‌روزرسانی: 2026-09-28** • **ساخته شده با ❤️**
 
 </div>
