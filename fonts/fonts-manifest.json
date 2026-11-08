@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "count": 1,
+  "fonts": [
+    {
+      "file": "irani_dAbirI.ttf",
+      "family": "irani_dAbirI",
+      "version": "Version 2.000;November 9, 2026;FontCreator 16.0.0.3068 64-bit",
+      "revision_milli": 2000,
+      "sha256": "0ee5b2a3fd7cce09c273431c8533f656e1593f1caeacc40211eb073eed683868",
+      "size": 3095716
+    }
+  ]
+}
