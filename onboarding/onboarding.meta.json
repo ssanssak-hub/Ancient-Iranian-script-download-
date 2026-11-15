@@ -3,10 +3,10 @@
   "file": "onboarding.json",
   "file_id": "b065c1b3-b64e-5413-813d-bc9df8f5df3d",
   "revision_id": "ef63fdd1-18f9-4f50-8e10-39ab3ddd73b9",
-  "version": 6,
+  "version": 7,
   "updated": "2026-11-15",
   "content_hash": "59ce2683aff3b4fa20f2b1d7c8a27d8e8b24228a3e8a1c5e44cfd94eacf9d09c",
-  "sha256": "4fb3c8615c5bef23582e72d5890916b11da82819206b53d467a8cf12ba07be1e",
+  "sha256": "ebfd712e47658e53b31913dd296703c9ea61157ab0296e8d1ada47fbeef1e8f2",
   "size": 25445,
   "entries": 69
 }
