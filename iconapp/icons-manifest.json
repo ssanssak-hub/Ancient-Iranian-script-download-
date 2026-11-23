@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "base": "iconapp",
+  "icons": [
+    {
+      "id": "01_aurora_ice",
+      "file": "01_aurora_ice.png",
+      "version": 1,
+      "sha256": "0d27357d707b90f9662c359ab81d13475645bb673c6cad8bc95df40c7371ff35",
+      "size": 930066,
+      "title": "01 aurora ice"
+    },
+    {
+      "id": "02_sakura",
+      "file": "02_sakura.png",
+      "version": 1,
+      "sha256": "876792139d2dff750f5c13b6b879ec0cd3250670776ea11f505cd69fcafe181d",
+      "size": 986886,
+      "title": "02 sakura"
+    },
+    {
+      "id": "03_ruby_fire",
+      "file": "03_ruby_fire.png",
+      "version": 1,
+      "sha256": "e058612f9e138844eff228a8ac18ffe10668598ce77a9349f97761bed21de365",
+      "size": 898885,
+      "title": "03 ruby fire"
+    },
+    {
+      "id": "04_amethyst",
+      "file": "04_amethyst.png",
+      "version": 1,
+      "sha256": "4011193ad9b10095d7e9572471668b8a9944e3b8147b344780054fd2abb1358b",
+      "size": 969498,
+      "title": "04 amethyst"
+    },
+    {
+      "id": "05_cyberpunk",
+      "file": "05_cyberpunk.png",
+      "version": 1,
+      "sha256": "428773185684e21728905909a9bc0287368554427d128070270fdaee0a5bda5d",
+      "size": 1007506,
+      "title": "05 cyberpunk"
+    },
+    {
+      "id": "06_parchment_light",
+      "file": "06_parchment_light.png",
+      "version": 1,
+      "sha256": "9ac68b4035001f2c8f57a98acbdde848791fc37af827d3599472116e7465aeac",
+      "size": 834369,
+      "title": "06 parchment light"
+    },
+    {
+      "id": "07_sunset",
+      "file": "07_sunset.png",
+      "version": 1,
+      "sha256": "b4bc12e585b4a0b17d4447f35e161ac693ed45542744e9529483f053be1a03f4",
+      "size": 971965,
+      "title": "07 sunset"
+    },
+    {
+      "id": "08_holographic",
+      "file": "08_holographic.png",
+      "version": 1,
+      "sha256": "173b5918c11dea1f8f36895f6b1b738178bdac959d1c17878c0f952f19e6b7c9",
+      "size": 1015135,
+      "title": "08 holographic"
+    },
+    {
+      "id": "09_galaxy_nebula",
+      "file": "09_galaxy_nebula.png",
+      "version": 1,
+      "sha256": "0bda25ae942e05730fb34cd8969562bb908381a99b537f069201ff022e16c58a",
+      "size": 629258,
+      "title": "09 galaxy nebula"
+    },
+    {
+      "id": "10_emerald_royal",
+      "file": "10_emerald_royal.png",
+      "version": 1,
+      "sha256": "2ffb01c3c9acfe71fc6c6dc7e5dc11d06424fbc38e6d0344742fe9d1095a4514",
+      "size": 655418,
+      "title": "10 emerald royal"
+    },
+    {
+      "id": "11_midnight_silver",
+      "file": "11_midnight_silver.png",
+      "version": 1,
+      "sha256": "0a8f435bc5ba142e28356e2eb1174ebdd9adc3d701e778181403d197b4bc19ff",
+      "size": 429186,
+      "title": "11 midnight silver"
+    },
+    {
+      "id": "12_rose_gold_marble",
+      "file": "12_rose_gold_marble.png",
+      "version": 1,
+      "sha256": "c95f9b905d6f996c4fe96d94813b9fc0af01906e9bee094ccfbf34adce1571b9",
+      "size": 476349,
+      "title": "12 rose gold marble"
+    },
+    {
+      "id": "13_blueprint",
+      "file": "13_blueprint.png",
+      "version": 1,
+      "sha256": "3fa864f1e59dcca83de5977a987d105551555aa6214e4d15ab854e720737cf70",
+      "size": 902122,
+      "title": "13 blueprint"
+    },
+    {
+      "id": "14_aurora_borealis",
+      "file": "14_aurora_borealis.png",
+      "version": 1,
+      "sha256": "8bbc529e8bda7736eb42a8eacb077e9a490afdc13f3984047373ea9807a441e9",
+      "size": 586337,
+      "title": "14 aurora borealis"
+    },
+    {
+      "id": "15_copper_patina",
+      "file": "15_copper_patina.png",
+      "version": 1,
+      "sha256": "6d8eaf02cceba7a19f1a3d563acb4e5ffb71bfe14082044c3267756e0006d9c8",
+      "size": 605588,
+      "title": "15 copper patina"
+    },
+    {
+      "id": "16_burgundy_velvet_gold",
+      "file": "16_burgundy_velvet_gold.png",
+      "version": 1,
+      "sha256": "799a7484444ae2a7e06b5ae7e6432759b63f8dcab13978aecd61a1dc300365a4",
+      "size": 427419,
+      "title": "16 burgundy velvet gold"
+    },
+    {
+      "id": "17_noir_gold_minimal",
+      "file": "17_noir_gold_minimal.png",
+      "version": 1,
+      "sha256": "7c30ca653e2fb001975d6a10dec2469ebaea469315b6393b6753bb12340153e6",
+      "size": 308301,
+      "title": "17 noir gold minimal"
+    },
+    {
+      "id": "18_dreamy_pastel",
+      "file": "18_dreamy_pastel.png",
+      "version": 1,
+      "sha256": "6ee4cf265520cee7f9f137f68ed93122a1d317eb664becdcd50d5233b8a0b765",
+      "size": 382422,
+      "title": "18 dreamy pastel"
+    },
+    {
+      "id": "3-aurora",
+      "file": "3-aurora.png",
+      "version": 1,
+      "sha256": "85e274e29edf3647d098e05aca59e0c079a6c456043c77caab3fdc8ab7fb113f",
+      "size": 677778,
+      "title": "3-aurora"
+    },
+    {
+      "id": "gold-v2",
+      "file": "gold-v2.png",
+      "version": 1,
+      "sha256": "081d8fd3ed0f486033b27b8196867febbdcbbd330823cf1f1bcc22aaee12e611",
+      "size": 834149,
+      "title": "gold-v2"
+    },
+    {
+      "id": "neon-v2",
+      "file": "neon-v2.png",
+      "version": 1,
+      "sha256": "697f682d36fe6be21e517e22daee97d3a29de8bcb579a2be4a27410b6f91e881",
+      "size": 341642,
+      "title": "neon-v2"
+    }
+  ],
+  "packs": [],
+  "retired": {},
+  "revision": 1,
+  "generated_at": "2026-11-23T21:51:30Z"
+}
