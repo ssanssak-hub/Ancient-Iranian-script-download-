@@ -1,13 +1,7 @@
 name: iconapp manifest
 
-# این فایل را در مخزن Ancient-Iranian-script-download- در مسیر
-#   .github/workflows/iconapp-manifest.yml
-# بگذارید. با هر تغییر در پوشهٔ iconapp (افزودن/حذف/جایگزینی عکس یا zip)
-# فایل iconapp/icons-manifest.json خودکار ساخته/بروز می‌شود: فهرست آیکون‌ها + نسخهٔ هر آیکون
-# (آیکونِ هم‌نامی که محتوایش عوض شود، نسخه‌اش +۱ می‌شود). اپلیکیشن به همین فایل وصل است.
-# نیازی به توکن نیست. (Settings ← Actions ← General ← Workflow permissions = Read and write)
 
-on:
+"on":
   push:
     branches: [ main, master ]
     paths:
