@@ -2,11 +2,11 @@
   "schema": 2,
   "file": "onboarding.json",
   "file_id": "b065c1b3-b64e-5413-813d-bc9df8f5df3d",
-  "revision_id": "33806483-2a86-4fc9-af11-d418ac0017ba",
-  "version": 9,
+  "revision_id": "70c46b48-025b-4ebb-b88b-57fdf590c264",
+  "version": 10,
   "updated": "2026-11-19",
-  "content_hash": "888d6ab8b18e61a0ef5c0c7f144da3dfaad44666d157bac8468d1a16e92da258",
-  "sha256": "f371fda6d0f3c70954532bf3e4912acab31eeb7046e5c13b78b4df5780d91911",
-  "size": 30388,
-  "entries": 74
+  "content_hash": "5bda587938ae722636ee8ac2da6b19ab09416cd612bb4ce3532c089dc043baca",
+  "sha256": "c1cc603c0f5350d22e6e1675975da73dda1fb2e855cabd25537450befb58f819",
+  "size": 32507,
+  "entries": 75
 }
