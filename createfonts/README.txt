@@ -1,7 +1,10 @@
-Upload BOTH files to:  https://github.com/ssanssak-hub/Ancient-Iranian-script-download-/tree/main/createfonts
+استودیو ساخت و ویرایش فونت — نسخه 1.3.0
 
-  font-studio.zip        : the studio package the app downloads
-  fontstudio.meta.json   : version info the app reads (version, size, sha256, notes ...)
+این بسته شامل Font Pro Lab است:
+- بررسی سلامت فونت و Preflight
+- آزمایشگاه Preview زنده با فونت ساخته‌شده
+- نقشه پوشش Unicode عربی/فارسی
+- گزارش JSON سلامت فونت
+- آمار Glyph، contour و point
 
-Upload them together in the same commit. Whenever you publish a new studio version,
-rebuild with tools/FontStudioPackager.java (a higher --version-code) and replace both files.
+نکته: بررسی سلامت، ابزار تشخیصی است و جایگزین تست نهایی فونت در سیستم‌عامل‌ها و مرورگرهای هدف نیست.
