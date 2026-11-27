@@ -1,5 +1,5 @@
 # معماری «استودیو ساخت و ویرایش فونت» — مرجع برای ادامهٔ توسعه
-(نسخهٔ ۱.۸.۱، versionCode=12. این فایل برای این است که بعداً بدون فرستادن فایل‌های اپ بشود کار را ادامه داد. اگر ساختار عوض شد، این فایل را هم به‌روز کنید.)
+(نسخهٔ ۱.۷.۰، versionCode=10. این فایل برای این است که بعداً بدون فرستادن فایل‌های اپ بشود کار را ادامه داد. اگر ساختار عوض شد، این فایل را هم به‌روز کنید.)
 
 ## ۱) تصویر کلی
 - استودیو یک وب‌اپ HTML/JS خالص است که داخل WebView اپ (applicationId: `irani.script.keyboards`) از آدرس `https://appassets.androidplatform.net/studio/web/index.html` اجرا می‌شود.
@@ -9,7 +9,7 @@
 
 ## ۲) محتویات بسته (`font-studio.zip`)
 `manifest.json` + `web/` شامل: `index.html`، `style.css` و `js/` با این ترتیب بارگذاری (ترتیب مهم است):
-`/__host/host.js` ← macnames ← sfnt ← cff ← export ← editor ← svgimport ← layout ← trace ← app ← app2 ← advanced ← pro ← ultra ← ultra2 ← ultra3.
+`/__host/host.js` ← macnames ← sfnt ← cff ← export ← editor ← svgimport ← layout ← trace ← app ← app2 ← advanced ← pro ← ultra ← ultra2.
 
 | فایل | نقش |
 |---|---|
@@ -26,7 +26,6 @@
 | `pro.js` | Auto joining، Smart Kerning، Component، Batch، Mark، Variable Lab (قدیمی) |
 | `ultra.js` (۱.۶.۰) | وزن/Offset، پاک‌سازی نقاط، فاصله‌گذاری، متریک عمودی، نگاشت فارسی/عربی، Mark-to-Base/Mark، نام‌گذاری |
 | `ultra2.js` (۱.۷.۰) | حذف همپوشانی، ناحیه‌های هم‌ترازی/اُورشوت |
-| `ultra3.js` (۱.۸.۰/۱.۸.۱) | تولید ایتالیک/اُبلیق، مرکزچین‌سازی اپتیکال، درون‌یابی دو master و اصلاحات ایمنی batch |
 
 ## ۳) مدل داده
 - `S` (در `StudioApp.S` و `StudioDebug.S`): `font, name, meta, hist, redo, tab, dirty, ttf, origBytes, page, q, filter, ed, testGen`؛ `S.gi` اندیس گلیف فعلی.
@@ -83,16 +82,3 @@ Kotlin در محیط من هرگز کامپایل نشده؛ بعد از تغی�
 
 ## ۱۰) ایده‌های بعدی (هنوز ساخته نشده)
 Subset (نیازمند بازنویسی اندیس‌ها در GSUB/GPOS)، تولید سبک Italic/Oblique دسته‌ای، Variable instance، کلاس‌بندی Kerning، تولید حروف از اسکلت+نقطه برای فارسی، auto-hinting/gasp.
-
-
-## ۱۱) Ultra 3 — نسخهٔ ۱.۸.۰
-در `web/js/ultra3.js` سه ابزار هندسی تازه اضافه شده است:
-- **Batch Italic / Oblique:** اعمال shear درجه‌یک روی محدوده‌ای از گلیف‌ها، با خط پایهٔ ثابت و گزینهٔ حفظ سمت چپ یا افزایش advance برای جلوگیری از برش.
-- **Optical Ink Centering:** مرکزچین‌سازی هندسی جوهر در advance بدون تغییر Unicode، نام یا advance؛ گلیف‌های خالی و markهای بدون advance مناسب رد می‌شوند.
-- **Two-Master Glyph Interpolation:** درون‌یابی مختصات بین دو گلیف master با توپولوژی یکسان؛ تعداد کانتور و نقاط باید برابر باشد و موارد ناسازگار بدون تغییر رد می‌شوند.
-
-این ابزارها فقط JS هستند، فایل‌های اپ Kotlin را تغییر نمی‌دهند و Undo استاندارد استودیو را استفاده می‌کنند.
-
-
-### Ultra 4 (1.9.0)
-`web/js/ultra4.js` چهار ابزار افزوده دارد: Extrema Repair، Smart Sidebearing Equalizer، Controlled Vertical Fit و Geometry Quality Scan. این فایل فقط JS است و به API جدید میزبان نیاز ندارد.
