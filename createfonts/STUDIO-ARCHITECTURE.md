@@ -58,7 +58,7 @@ zip و meta را **با هم** در `createfonts` بگذارید؛ دستی وی
 
 ## ۷) تست
 - شبیه‌ساز نصب اپ: `python tools/fontstudio-test/app_sim.py createfonts/fontstudio.meta.json createfonts/font-studio.zip`.
-- کامل: `python tools/fontstudio-test/preflight.py createfonts --previous-version <کد قبلی>` (نیاز: playwright+chromium، fonttools، و در مخزن شما `FontStudioPathHandler.kt` برای CSP و فونت `assets/fonts/irani_dAbirI.ttf`).
+- کامل: `python tools/fontstudio-test/preflight.py createfonts --previous-version <کد قبلی>` (نیاز: playwright+chromium، fonttools، فایل‌های Kotlin پوشهٔ fontstudio در زیپ توسعه، و فونت `app/src/main/assets/fonts/irani_dAbirI.ttf` که در زیپ نیست). با فونت جایگزین، مراحل ۲۷ و ۲۹ و دو بررسی «bounds/advance» اعتبارسنجی خروجی به‌خاطر ویژگی‌های آن فونت رد می‌شوند و ربطی به استودیو ندارند.
 - تست رابط: `node tools/fontstudio-test/e2e.js --pkg <پوشهٔ باز‌شدهٔ zip> --out out --bigfont <ttf> --csp <فایل CSP، بدون خط‌جدید انتهایی> --shim <host.js استخراج‌شده از FontStudioShim.kt> --features <فهرست FEATURES>`. مراحل ۲۷ و ۲۹ تعداد ثابت ۱۱۰۳۷ گلیف فونت `irani_dAbirI.ttf` را انتظار دارند؛ با فونت دیگر عمداً رد می‌شوند.
 - تست الگوریتم‌ها بدون اپ: صفحهٔ خالی Chromium با `macnames,sfnt,cff,export,editor,<ابزار>` + `Path2D.fill('nonzero')` برای مقایسهٔ پیکسلی (روش تست حذف همپوشانی). `FS.sfnt.loadFont` روی فونت‌های سیستم کار می‌کند.
 
@@ -66,6 +66,12 @@ zip و meta را **با هم** در `createfonts` بگذارید؛ دستی وی
 مسیر: `app/PersianFontKeyboard/app/src/main/java/com/example/persianfontkeyboard/fontstudio/`
 `FontStudioBridge.kt` (پل؛ `API_VERSION`، `FEATURES` که فقط زیاد می‌شود)، `FontStudioShim.kt` (host.js)، `FontStudioStore.kt` (نگه‌داری نسخه + نسخهٔ قبلی)، `FontStudioInstaller.kt` (نصب/راستی‌آزمایی SHA)، `FontStudioRemote.kt` (بررسی meta)، `FontStudioHubActivity.kt` (صفحهٔ مدیریت و بازگشت)، `FontStudioPathHandler.kt` (سرو فایل و CSP). مستند پل: `docs/FONT_STUDIO_HOST_API.md`، معماری: `GUIDE-fa.md`.
 Kotlin در محیط من هرگز کامپایل نشده؛ بعد از تغییر اپ یک بیلد بگیرید.
+
+### CSP واقعی اپ (از `FontStudioPathHandler.kt`، فقط روی html اعمال می‌شود)
+`default-src 'self'; script-src 'self' 'wasm-unsafe-eval' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data: blob:; connect-src 'self' data: blob:; worker-src 'self' blob:; media-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`
+مسیرهای مجازی: `/studio/…` بستهٔ نصب‌شده، `/__io/…` فایل‌های رد و بدل‌شده، `/__ws/…` فضای کار، `/__host/host.js` شیم. فقط داخل ریشه خوانده می‌شود (`..` و لینک نمادین رد می‌شوند).
+### API میزبان (`FontStudioHost`، از `FontStudioShim.kt`)
+`info, capabilities(), has(name), on/off (pause|resume), pickFiles({accept,multiple}), fetchBytes(url), stage, saveFile(data,name,mime), shareFile, appFonts.{list,exportToStudio,install}, ws.{list,stat,usage,remove,move,putText,getText,put,read}, toast, copyText, pasteText, openExternal, keepScreenOn, setOrientation, haptic, setUnsaved, close, openManager, log, setBackHandler`. داده در تکه‌های ۳۸۴KB با Base64 منتقل می‌شود (برای داده‌های سنگین مناسب نیست). رشتهٔ شیم نباید `$` داشته باشد. قابلیت‌های اپ فعلی (`FEATURES`): pickFiles, saveFile, shareFile, appFonts.list/export/install, workspace, clipboard, openExternal, haptic, orientation, keepScreenOn, unsavedGuard, backHandler, manager.
 
 ## ۹) نکته‌های تجربه‌شده
 - در `index.html` ترتیب اسکریپت‌ها مهم است؛ ابزار جدید آخر بیاید.
