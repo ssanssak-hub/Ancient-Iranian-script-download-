@@ -92,3 +92,7 @@ Subset (نیازمند بازنویسی اندیس‌ها در GSUB/GPOS)، تو
 - **Two-Master Glyph Interpolation:** درون‌یابی مختصات بین دو گلیف master با توپولوژی یکسان؛ تعداد کانتور و نقاط باید برابر باشد و موارد ناسازگار بدون تغییر رد می‌شوند.
 
 این ابزارها فقط JS هستند، فایل‌های اپ Kotlin را تغییر نمی‌دهند و Undo استاندارد استودیو را استفاده می‌کنند.
+
+
+### Ultra 4 (1.9.0)
+`web/js/ultra4.js` چهار ابزار افزوده دارد: Extrema Repair، Smart Sidebearing Equalizer، Controlled Vertical Fit و Geometry Quality Scan. این فایل فقط JS است و به API جدید میزبان نیاز ندارد.

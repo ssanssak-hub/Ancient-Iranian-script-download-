@@ -1,11 +1,11 @@
 {
-  "version": 12,
-  "versionName": "1.8.1",
-  "sha256": "f2b4c8f86edb0386684e56a9e473e7495ce372f20b8e9b7bcb4d5f6c4a23eae6",
-  "size": 118386,
+  "version": 13,
+  "versionName": "1.9.0",
+  "sha256": "b64bd4d5e1578845cab1f65e9f8c8615808539bcfd34d27c8ac59ebea29e7187",
+  "size": 123058,
   "zip": "font-studio.zip",
   "minAppVersionCode": 1,
   "releasedAt": "2026-11-27",
-  "notes": "\u06f1.\u06f8.\u06f1: \u0631\u0641\u0639 \u0628\u0627\u06af\u200c\u0647\u0627\u06cc Font Studio Ultra 3 \u2014 \u0627\u0635\u0644\u0627\u062d \u0645\u062d\u0627\u0633\u0628\u0647 advance \u062f\u0631 \u0627\u064f\u0628\u0644\u06cc\u0642\u060c \u06af\u0631\u062f\u06a9\u0631\u062f\u0646 \u062c\u0627\u0628\u0647\u200c\u062c\u0627\u06cc\u06cc \u0645\u0631\u06a9\u0632\u0686\u06cc\u0646 \u0628\u0631 \u0627\u0633\u0627\u0633 \u0645\u062f\u0644 \u0645\u062e\u062a\u0635\u0627\u062a \u0627\u0633\u062a\u0648\u062f\u06cc\u0648\u060c \u0648 \u0628\u0627\u0632\u06af\u0631\u062f\u0627\u0646\u06cc \u0627\u0645\u0646 \u0647\u0631 \u06af\u0644\u06cc\u0641 \u062f\u0631 \u0635\u0648\u0631\u062a \u062e\u0637\u0627\u06cc \u067e\u0631\u062f\u0627\u0632\u0634 \u062f\u0633\u062a\u0647\u200c\u0627\u06cc.",
-  "notesEn": "1.8.1: Font Studio Ultra 3 bug fixes - corrected oblique advance expansion, rounded optical-centering shifts to match the studio coordinate model, and added per-glyph rollback for batch-operation errors."
+  "notes": "\u06f1.\u06f9.\u06f0: \u0627\u0641\u0632\u0648\u062f\u0646 Font Studio Ultra 4 \u0634\u0627\u0645\u0644 \u062a\u0631\u0645\u06cc\u0645 extrema\u060c \u06cc\u06a9\u0633\u0627\u0646\u200c\u0633\u0627\u0632\u06cc \u0647\u0648\u0634\u0645\u0646\u062f sidebearing\u060c \u0641\u06cc\u062a \u0639\u0645\u0648\u062f\u06cc \u06a9\u0646\u062a\u0631\u0644\u200c\u0634\u062f\u0647 \u0648 \u0627\u0633\u06a9\u0646 \u063a\u06cc\u0631\u0645\u062e\u0631\u0628 \u06a9\u06cc\u0641\u06cc\u062a \u0647\u0646\u062f\u0633\u0647. \u0647\u06cc\u0686 API \u062c\u062f\u06cc\u062f\u06cc \u0627\u0632 \u0627\u067e \u0644\u0627\u0632\u0645 \u0646\u06cc\u0633\u062a \u0648 minAppVersionCode=1 \u0648 hostApi=1 \u062d\u0641\u0638 \u0634\u062f\u0647\u200c\u0627\u0646\u062f.",
+  "notesEn": "1.9.0: Added Font Studio Ultra 4 with extrema repair, smart sidebearing equalization, controlled vertical fitting, and a non-destructive geometry quality scanner. No new app API is required; minAppVersionCode=1 and hostApi=1 remain unchanged."
 }

@@ -1,4 +1,4 @@
-استودیو ساخت و ویرایش فونت — نسخه 1.8.1 (کد نسخه 12)
+استودیو ساخت و ویرایش فونت — نسخه 1.9.0 (کد نسخه 13)
 
 این پوشه (createfonts) برای دریافت بستهٔ استودیو است:
 - font-studio.zip       : بستهٔ استودیو (manifest.json + web/)
@@ -17,3 +17,10 @@
 قانون انتشار: font-studio.zip و fontstudio.meta.json را دستی ویرایش نکنید؛ از
 PersianFontKeyboard/tools/FontStudioPackager.java استفاده کنید تا SHA-256 و manifest هماهنگ بمانند.
 فایل‌های اپ/Kotlin در این ارتقا تغییر نکرده‌اند؛ minAppVersionCode=1 و hostApi=1 باقی مانده‌اند.
+
+
+ویژگی‌های 1.9.0:
+- Ultra 4: ترمیم extrema برای منحنی‌ها
+- Ultra 4: یکسان‌سازی هوشمند sidebearing
+- Ultra 4: فیت عمودی کنترل‌شده
+- Ultra 4: اسکن غیرمخرب کیفیت هندسه
